@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Product Design</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        .main {
+            height: 100%;
+        }
+
+        .top {
+            height: 15%;
+            display: flex;
+        }
+
+        .middle {
+            height: 15%;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+        }
+
+        .bottom {
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .menu {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        .section {
+            height: 100%;
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .productinfo {
+            height: 20%;
+            width: 75%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .sizechart {
+            height: 50%;
+            width: 40%;
+            margin: 10%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 10px;
+            box-shadow: 0px 0px 10px 0px;
+        }
+
+        .sizechart2 {
+            height: 50%;
+            width: 20%;
+            margin: 5%;
+            margin-left: 5%;;
+            padding: 10px;
+            box-shadow: 0px 0px 10px 0px;
+            background-color: rgb(210, 115, 21);
+            color: white;
+            border: none;
+        }
+
+        .sizechart3 {
+            height: 50%;
+            width: 40%;
+            margin: 5%;
+            margin-left: 5%;;
+            padding: 10px;
+            box-shadow: 0px 0px 10px 0px;
+            background-color: rgb(148, 83, 17);
+            color: white;
+            border: none;
+        }
+
+        .menu2 {
+            height: 80%;
+            width: 68%;
+            display: grid;
+            grid-template-rows: repeat(6, 50px);
+            row-gap: 2px;
+            margin-left: 3%;
+        }
+
+        .menu3 {
+               height: 100px;
+               width: 100%;
+               margin-top: 25px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+        }
+
+        .menu4 {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                box-shadow: 0px 0px 5px 2px;
+                width: 80%;
+                padding: 0;
+
+        }
+
+        .menu5 {
+            width: 80%;
+        }
+
+        .icon {
+            height: 100px;
+        }
+
+        .icon2 {
+            height: 20px;
+            display: flex;
+        }
+
+        .icon3 {
+            width: 100%;
+        }
+
+        .icon4 {
+            margin-left: 10px;
+            height: 20px;
+        }
+
+
+        .item {
+             box-shadow: 0px 0px 5px 2px;
+             padding: 10px;
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+        }
+        
+        .item2 {
+             box-shadow: 0px 0px 5px 2px;
+             height: 20px;
+             padding: 20px;
+             margin-top: 50px;
+             margin-bottom: 50px;
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: space-between;
+        }
+
+        .item3 {
+            background-color: rgb(196, 192, 192);
+            box-shadow: 0px 0px 5px 2px;
+            width: 25%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px;
+        }
+
+        .item4 {
+             box-shadow: 0px 0px 5px 2px;
+             width: 90%;
+             padding: 20px;
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: space-between;
+        }
+
+        .item5 {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 5px 2px;
+            width: 90%;
+            padding: 20px;
+        }
+
+        .item6 {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            padding: 5%;
+        }
+
+        .item7 {
+             box-shadow: 0px 0px 5px 2px;
+             height: 75px;
+             padding: 20px;
+             margin-bottom: 50px;
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: center;
+        }
+
+
+        .colordiv {
+            background-color: brown;
+            height: 20px;
+            width: 20px;
+        }
+
+        .colordiv2 {
+            background-color: rgb(13, 4, 4);
+            height: 20px;
+            width: 20px;
+        }
+
+        .colordiv3 {
+            background-color: rgb(120, 118, 118);
+            height: 20px;
+            width: 20px;
+        }
+
+        span {
+            color: lightskyblue;
+        }
+        
+        hr {
+          box-shadow: 0 0 5px 1px;
+        }
+
+        h2 {
+            margin-top: 50px;
+            margin-left: 20px;
+            font-family: 'Comfortaa', sans-serif;
+        }
+
+        p {
+            font-family: 'Comfortaa', sans-serif;
+            padding: 10px;
+            margin-top: 45px;
+        }
+
+        .p2 {
+            margin-top: 20px;
+        }
+
+        .p3 {
+            margin: 0;
+        }
+
+
+        h1 {
+            font-family: 'Comfortaa', sans-serif;
+            margin-left: 120px;
+        }
+
+        input {
+            width: 20px;
+        }
+
+        @media (max-width:680px) {
+            .bottom {
+                flex-direction: column;
+            }
+
+            .section {
+                width: 100%;
+            }
+
+
+            .menu {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+
+            h2 {
+                font-size: 12px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter&family=Libre+Baskerville&family=Lora&family=Nunito+Sans:opsz@6..12&family=Open+Sans&family=Oswald&family=PT+Serif&family=Sono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+           <div class="menu">
+              <img class="icon" src="./design.png" alt="design">
+              <h2>Custom Clothes <span>E-Design</span></h2>
+           </div>
+           <div class="menu">
+              <p>Shop</p>
+              <p>Design Online</p>
+              <p>My Account</p>
+              <p>Checkout</p>
+              <p>Cart</p>
+              <p>Buy Now</p>
+           </div>
+        </div>
+        <hr />
+        <div class="middle">
+          <h1>
+            Design Online
+          </h1>
+        </div>
+        <hr />
+        <div class="bottom">
+            <div class="section">
+                <div class="productinfo">
+                    <button class="sizechart">Product Info</button>
+                    <button class="sizechart">Chart Size</button>
+                </div>
+                <div class="menu2">
+                   <div class= "item">
+                      <img class="icon2" src="./text.png" alt="text">
+                      <p class="p2">Add Text</p>
+                   </div>
+                   <div class="item">
+                      <img class="icon2" src="./art.png" alt="art">
+                      <p class="p2">Add Art</p> 
+                   </div>
+                   <div class="item">
+                      <img class="icon2" src="./upload.png" alt="upload">
+                      <p class="p2">Upload Image</p>
+                   </div>
+                   <div class= "item">
+                      <img class="icon2" src="./id-card.png" alt="name&number">
+                      <p class="p2">Name & Number</p>
+                   </div>
+                   <div class="item">
+                      <img class="icon2" src="./user.png" alt="mydesign">
+                      <p class="p2">My Design</p>
+                   </div>
+                   <div class="item">
+                       <img class="icon2" src="./qr.png" alt="qrcode">
+                       <p class="p2">Add QR Code</p>
+                   </div>
+                   <div class="item2">
+                    <p class="p2">Layers</p>
+                    <img class="icon2" src="./down-filled-triangular-arrow.png" alt="down-filled-triangular-arrow">
+                   </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="menu3">
+                   <div class="item3">
+                    <img class="icon2" src="./question-mark.png" alt="question-mark">
+                    <p class="p3">Help</p>
+                   </div>
+                   <div class="item3">
+                    <img class="icon2" src="./eye.png" alt="preview">
+                    <p class="p3">Preview</p>
+                   </div>
+                    <div class="item3">
+                        <img class="icon2" src="./search_3031293.png" alt="zoom">
+                        <p class="p3">Zoom</p>
+                       </div>
+                       <div class="item3">
+                        <img class="icon2" src="./trash-can_542724.png" alt="trashcan">
+                        <p class="p3">Reset</p>
+                       </div>
+                   </div>
+                   <img class="icon3" src="./Bomber-Jacket-Transparent-Background-PNG.png" alt="Jacket">
+                </div>
+                <div class="section">
+                   <h3>Save and share this design</h3>
+                   <div class="menu4">
+                      <button class="sizechart2">Save</button>
+                      <img class="icon4" src="./email.png" alt="email">
+                      <img class="icon4" src="./facebook.png" alt="facebook">
+                      <img class="icon4" src="./twitter.png" alt="twitter">
+                      <img class="icon4" src="./linkedin.png" alt="linkedin">
+                   </div>
+                   <div class="menu5">
+                    <div class="item4">
+                        <p class="p3">Product Options</p>
+                        <img class="icon2" src="./down-filled-triangular-arrow.png" alt="down-filled-triangular-arrow">
+                       </div>
+                       <div class="item4">
+                        <p class="p3">Choose product color</p>
+                        <div class="colordiv"></div>
+                        <div class="colordiv2"></div>
+                        <div class="colordiv3"></div>
+                        </div>
+                       <div class="item5">
+                          <p class="p3">Choose Product Size</p>
+                          <div class="item4">
+                            <div class="item6">
+                            <label for="small">S</label>
+                            <input id="small" type="text" placeholder="0">
+                          </div>
+                          <div class="item6">
+                            <label for="medium">M</label>
+                            <input id="medium" type="text" placeholder="0">
+                          </div>
+                          <div class="item6">
+                            <label for="large">L</label>
+                            <input id="large" type="text" placeholder="0">
+                        </div>
+                        <div class="item6">
+                            <label for="extra-large">XL</label>
+                            <input id="extra-large" type="text" placeholder="0">
+                          </div>
+                          </div>
+                        </div>
+                       <div class="item4">
+                        <p class="p3">Color Used</p>
+                        <img class="icon2" src="./down-filled-triangular-arrow.png" alt="down-filled-triangular-arrow">
+                       </div>
+                       <div class="item4">
+                        <p class="p3">Screen Size</p>
+                        <img class="icon2" src="./down-filled-triangular-arrow.png" alt="down-filled-triangular-arrow">
+                       </div>
+                       <div class="item">
+                        <p class="p3">Total</p>
+                        <p class="p3" style="text-decoration: line-through; color: orangered;">$22.00</p>
+                        <h3>$20.00</h3>
+                       </div>
+                       <div class="item7">
+                        <button class="sizechart3">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+        </div>  
+</body>
+</html>
